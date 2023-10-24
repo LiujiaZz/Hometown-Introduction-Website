@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="pic/login_logo.jpg" type="image/x-cion">
+    <title>注册</title>
+    <style>
+body{
+    background-image: linear-gradient(to right,#a770ef,#cf8bf3,#fdb99b);
+}
+/* 导航栏 */
+.topnav{
+	text-align: center;
+	margin-bottom: 0px;
+}
+.content{
+	margin-top: -40px;
+}
+.one{
+	border: #304352 solid 3px;
+	border-radius: 15px;
+	height: 23px;
+}
+.re{
+	border-radius: 15px;
+	font-size: 20px;
+	width: 150px;
+	height: 45px;
+	float: right;
+}
+    </style>
+</head>
+<body>
+	<div class="topnav">
+        <img src="pic/Content creation_Outline.png" >
+    </div>
+
+	<div class="content">
+	<form method="post" action="#">
+	<table align="center" cellspacing="4">
+		<tr>
+			<td align="right">昵称：</td>
+			<td><input class="one" type="text" size="51" required name="user_name" placeholder="请输入5-20位字母数字的组合" pattern="[0-9a-zA-Z]\w{5,20}"/><br></td>
+		</tr>
+		<tr>
+			<td rowspan="2"  align="right">上传头像：</td>
+		</tr>
+		<tr>
+			<td><input type="file" name="user_photo" / value="选择文件"></td>
+		</tr>
+		<tr>
+			<td align="right">生日：</td>
+			<td align="left"><input type="date" name="date"></td>
+		</tr>
+		<tr>
+			<td align="right">性别：</td>
+			<td><input type="radio" value="nan" name="sex" id="sex" checked><label for="sex">男</label><input type="radio" value="nv" name="sex" id="wo"><label for="wo">女</label></td>
+		</tr>
+		<tr>
+			<td rowspan="2" valign="top" align="right">密码：</td>
+			<td><input class="one" type="password" required name="word" maxlength="16" size="51" placeholder="6-16个字符组成，区分大小写，不能为纯数字"></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td align="right">密码：</td>
+			<td><input class="one" type="password" required name="word1" maxlength="16" size="51" placeholder="请再次确认"></td>
+		</tr>
+		<tr>
+			
+		</tr>
+		<tr>
+			<td align="right">爱好：</td>
+			<td><input type="checkbox" name="m1" id="clam"><label for="clam">Sing</label>
+			&nbsp;<input type="checkbox" name="m2" id="swim"><label for="swim">Sports</label>
+			&nbsp;<input type="checkbox" name="m3" id="hua"><label for="hua">Literature</label>
+			&nbsp;<input type="checkbox" name="m4" id="intel"><label for="intel">Computer</label></td>
+		</tr>
+		<tr>
+			<td align="right">电子邮箱：</td>
+			<td align="left"><input type="email" class="one" size="51" name="email" placeholder="请输入您的电子邮箱"></td>
+		</tr>
+		<script type="text/javascript">
+		function get(){
+			var val=document.getElementById("sg").value;
+			var res=document.getElementById("result");
+			res.innerHTML = val;
+		}
+		</script>
+		<tr>
+			<td align="right">你的身高：</td>
+			<td align="left"><input type="range" id="sg" value="175" min="130" max="200" step="5" onchange="get()"><span id="result">175</span>cm</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="注册" class="re"></td>
+		</tr>
+	</table>
+	
+	</form>
+</div>
+</body>
+</html>

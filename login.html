@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pic/login_logo.jpg" type="image/x-cion">
+    <title>登录注册</title>
+    <style>
+body{
+    background-image: linear-gradient(to right,#a770ef,#cf8bf3,#fdb99b);
+}
+/* 调整布局，当页面小于600时，等比缩小 */
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+}
+}
+.login{
+    height: 200px;
+    line-height: 30px;
+    text-align: center;
+}
+.head{
+    width: 100%;
+    margin: 0 auto;
+}
+.head img{
+    margin: -43px 0px -91px 0px;
+}
+.head p{
+    font-size: 28px;
+    color: white;
+}
+#login_text{
+    border: #000000 solid 3px;
+    border-radius: 10px;
+    background-color: #cf8bf3;
+}
+#login_password{
+    border: #000000 solid 3px;
+    border-radius: 10px;
+    background-color: #cf8bf3;
+}
+#login_G{
+    border:  #000000 solid 3px;
+    border-radius: 10px;
+    width: 120px;
+    font-size: 18px;
+    margin-left: 318px;
+}
+#login_R{
+    border:  #000000 solid 3px;
+    border-radius: 10px;
+    width: 120px;
+    font-size: 18px;
+    margin-left: 439px;
+}
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="head">
+        <img src="pic/Coding _Outline.png" >
+        <p>Please log in to your account <br>and enter your username and password</p>
+        </div>
+        <div class="table_login">
+        <form action="#" method="post">
+            <table align="center" cellspacing="10px" cellpadding="10px">
+                <tr>
+                    <td>Username：</td>
+                    <td height="10px"><input id="login_text" type="text" name="name" size="60"></td>
+                </tr>
+                <tr>
+                    <td>Password：</td>
+                    <td height="10px"><input id="login_password" type="password" name="pass" size="60"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id="login_G" type="submit" value="LOGIN" width="60px" height="4px"></td>
+                </tr>
+            </table>
+            
+        </form>
+
+    </div>
+    <a href="register.html" target="_blank"><button id="login_R">REGISTER</button>
+    </a>
+    </div>
+</body>
+</html>

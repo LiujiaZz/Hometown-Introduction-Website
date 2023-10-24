@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pic/jingdian-logo.jpg" type="image/x-cion">
+    <title>景点</title>
+    <style>
+/* 整体样式 */
+body{
+    background-image: linear-gradient(to right,#ADCCC4,#969597,#C7D1AC);
+}
+/* 调整布局，当页面小于600时，等比缩小 */
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+}
+}
+/* 头部介绍 */
+.box a{
+    color: white;
+    font-size: 80px;
+    text-decoration: none;
+}
+.box1{
+    width: 100px;height: 240px;
+    background-color: #93cfc0;
+}
+.box2{
+    width: 80px;height: 240px;
+    background-color: #a5cac0;
+    position: absolute;left: 30px;top: 30px;
+    padding: 0px 10px 0px 10px;
+}
+.box2:hover{transform: translate3d(-5px,-10px,2px);}
+
+.box{
+    position: fixed;
+    left: 66px; top: 12px;
+    letter-spacing: 10px;
+}
+
+/* 画廊 */
+#gallery {
+	margin: 10px auto;
+	padding: 40px;
+	list-style:none;
+	width:800px;
+}
+#gallery li {
+	float:left;
+	width:150px;
+	height:80px;
+	overflow:visible;
+}
+#gallery li a {
+	color:#333;
+	text-decoration:none;
+	font-size:4px;
+	display:block;
+	text-align:center;
+	background-color:#FFF;
+	padding:4px;	
+	opacity:0.8;
+	box-shadow:0 0 5px 2px #333;
+	/* 设计动画过渡效果 */
+	-webkit-transition: all 500ms linear;
+	-moz-transition: all 500ms linear;
+	transition: all 500ms linear;
+	/* 自定义变形原点 */
+	-webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	transform-origin:0 0;
+	/* 旋转变形 */
+	-webkit-transform:rotate(-15deg);
+	-moz-transform:rotate(-15deg);
+	transform:rotate(-15deg);
+}
+#gallery li a img {
+	width:140px;
+}
+#gallery li:nth-child(3n) a {
+	-webkit-transform:rotate(10deg);
+	-moz-transform:rotate(10deg);
+	transform:rotate(10deg);
+}
+#gallery li:nth-child(4n) a {
+	-webkit-transform:rotate(15deg);
+	-moz-transform:rotate(15deg);
+	transform:rotate(15deg);
+}
+#gallery li:nth-child(7n) a {
+	-webkit-transform:rotate(-13deg);
+	-moz-transform:rotate(-13deg);
+	transform:rotate(-13deg);
+}
+#gallery li:nth-child(9n) a {
+	-webkit-transform:rotate(-25deg);
+	-moz-transform:rotate(-25deg);
+	transform:rotate(-25deg);
+}
+#gallery li a:hover {
+	position:relative;
+	z-index: 999;
+	opacity: 1;
+	/* 旋转并放大 */
+	-webkit-transform: rotate(0deg) scale(2);
+	-moz-transform: rotate(0deg) scale(2);
+	transform: rotate(0deg) scale(2);
+}
+#gallery li a:hover:after {
+	content:attr(title);  /* 添加title属性内容 */
+}
+.introduce{
+	width: 1050px;height: 50px;
+	background-color: #ADCCC4;
+	font-size: 60px;
+	position: absolute;
+	left: 303px;
+	top: 385px;
+	text-align: center;
+}
+.total{
+	background-color: #ADCCC4;
+	width: 1010px;
+	margin: 440px 0px 0px 295px;
+	padding: 0px 20px;
+	letter-spacing: 4px;
+	line-height: 40px;
+}
+.total p{text-indent: 50px;word-spacing: 7px;}
+.total th  h3{font-size: 20px;color: #FFF;}
+
+/* 页脚 */
+.foot{width: auto;height: 50px;text-align: center;word-spacing: 7px;letter-spacing: 35px;}
+
+</style>
+</head>
+<body>
+<!-- 头部介绍 -->
+    <div class="box">
+    <div class="box1">
+        <span>&nbsp;</span>
+    </div>
+    <div class="box2">
+        <a href="#">景点</a>
+    </div>
+        </div>
+<!-- 画廊 -->
+    <ul id="gallery">
+    <li><a href="#" title="丰都鬼城"><img src="pic/丰都鬼城.jpg" alt="丰都鬼城" /></a></li>
+    <li><a href="#" title="八角亭"><img src="pic/八角亭.jpg" alt="八角亭" /></a></li>
+    <li><a href="#" title="安居古镇"><img src="pic/安居古镇.jpg" alt="安居古镇" /></a></li>
+    <li><a href="#" title="民国街"><img src="pic/民国街.jpg" alt="民国街" /></a></li>
+    <li><a href="#" title="洪崖洞"><img src="pic/洪崖洞.jpg" alt="洪崖洞" /></a></li>
+    <li><a href="#" title="白帝城"><img src="pic/白帝城.jpg" alt="白帝城" /></a></li>
+    <li><a href="#" title="皇冠大扶梯"><img src="pic/皇冠大扶梯.jpg" alt="皇冠大扶梯" /></a></li>
+    <li><a href="#" title="茶山竹海"><img src="pic/茶山竹海.jpg" alt="茶山竹海" /></a></li>
+    <li><a href="#" title="酉阳桃花源"><img src="pic/酉阳桃花源.jpg" alt="酉阳桃花源" /></a></li>
+    <li><a href="#" title="重庆市人民大礼堂"><img src="pic/重庆市人民大礼堂.jpg" alt="重庆市人民大礼堂" /></a></li>
+    <li><a href="#" title="重庆科技馆"><img src="pic/重庆科技馆.jpg" alt="重庆科技馆" /></a></li>
+    <li><a href="#" title="长江三峡"><img src="pic/长江三峡.jpg" alt="长江三峡" /></a></li>
+    <li><a href="#" title="长江索道"><img src="pic/长江索道.jpg" alt="长江索道" /></a></li>
+    <li><a href="#" title="阿依河"><img src="pic/阿依河.jpg" alt="阿依河" /></a></li>
+    <li><a href="#" title="龙兴古镇"><img src="pic/龙兴古镇.jpg" alt="龙兴古镇" /></a></li>
+    </ul>
+<div class="introduce"><p> 重 庆 风 光 & 景 点 </p></div>
+
+
+<!-- 文字介绍 -->
+
+<div class="total">
+	<table>
+		<tr>
+			<th><h3>丰都鬼城</h3></th>
+		</tr>
+		<tr>
+			<td>
+				<p>丰都鬼城旧名酆都鬼城，古为“巴子别都”，东汉和帝永元二年置县，距今已有近2000年的历史，位于重庆市下游丰都县的长江北岸，是长江游轮旅客的一个观光胜地。丰都鬼城又称为“幽都”、“鬼国京都”、“中国神曲之乡”。鬼城以各种阴曹地府的建筑和造型而著名。鬼城内有哼哈祠、天子殿、奈河桥、黄泉路、望乡台、药王殿等多座表现阴间的建筑。</p>
+				<p>国家首批AAAA级旅游区——丰都鬼城，是一座起源于汉代的历史文化名城，被人们传为“鬼国京都”、“阴曹地府”，成为人类亡灵的归宿之地。它不仅是传说中的鬼城，还是集儒、道、佛为一体的民俗文化艺术宝库，是长江黄金旅游线上最著名的人文景观之一。</p>
+				<p>丰都鬼城景区分为鬼城名山风景区和鬼王石刻风景区。</p>
+			</td>
+		</tr>
+		<tr>
+			<th><h3>八角亭</h3></th>
+		</tr>
+		<tr>
+			<td><p>遂宁八角亭位于遂宁城西的船山上，它只是老百姓口中的俗名，书名叫文峰阁。在老百姓心目中，八角亭既亲切又神秘；在文化人心目中，文峰阁更是占风水、主文运的镇州之宝。八角亭建于清朝乾隆四十七年（1782）年，200多年来成为遂宁标志性古建筑，在遂宁人心中一直有着亲切而又神圣的色彩，围绕着它不仅仅有众多的传说，还有遂州文人墨客绵延不绝的诗词楹联。</p></td>
+		</tr>
+		<tr>
+			<th><h3>安居古镇</h3></th>
+		</tr>
+		<tr>
+			<td><p>安居古镇是重庆市批准的20个历史文化名镇之一，于2008年授予第四批中国历史文化名镇；是国家AAAA级旅游景区，位于重庆市铜梁区安居镇境内，因境内有大安溪（琼江）而得名，有安居乐业之意。景区面积13.2平方公里，内含安居古城核心区3平方公里以及黑龙嘴、黄家坝、琵琶岛、波仑寺等文化旅游功能区块。</p></td>
+		</tr>
+		<tr>
+			<th><h3>民国街</h3></th>
+		</tr>
+		<tr>
+			<td><p>民国街是以“民国历史”、“巴渝特色”为主题的特色街区，位于重庆两江国际影视城。民国街的建设耗资1.3亿元。冯小刚执导、重庆电影集团首部投资的影片《一九四二》以该街道作为重要取景地。</p><p>民国街一期工程重现了民国时期重庆的著名建筑和景致，有国泰戏院、新华日报、馨雅咖啡、皇宫照相馆，还有一些具有旧重庆特色的博物馆、酒吧、商店、火锅博物馆、相机博物馆、民国主题酒吧等。</p></td>
+		</tr>
+		<tr>
+			<th><h3>洪崖洞</h3></th>
+		</tr>
+		<tr>
+			<td><p>洪崖洞，原名洪崖门，是古重庆城门之一，国家4A级旅游景区，位于重庆市解放碑沧白路，地处长江、嘉陵江两江交汇的滨江地带，是兼具观光旅游、休闲度假等功能的旅游区。2006年，由重庆市政府总投资3.85亿元兴建而成。</p><p>主要景点由吊脚楼、仿古商业街等景观组成。建筑面积4.6万平方米。洪崖洞是重庆市重点景观工程。</p></td>
+		</tr>
+		<tr>
+			<th><h3>白帝城</h3></th>
+		</tr>
+		<tr>
+			<td><p>白帝城位于重庆市奉节县白帝镇白帝村1号社，地处瞿塘峡口长江北岸，白帝山上，东望夔门，南与白盐山隔江相望，西临奉节县城，北倚鸡公山，地处长江三峡（长江三峡西起重庆奉节白帝城，东至湖北宜昌南津关）西端入口。</p><p>白帝城拥有多座城门，发现的有东门、小北门、大北门、皇殿台瓮城门（桑閤门）、小西门、西门等。东、西城门靠近长江。白帝城筑造是在历代筑城基础上增补及修建而成，白帝城存在城套城、城压城的现象，南宋宋元战争山城则是城连城、城中城、城外城的防御体系，具有强烈的军事堡垒特征。</p><p>2006年5月25日，白帝城被中华人民共和国国务院公布为第六批全国重点文物保护单位。2020年11月18日，当选“巴蜀文化旅游走廊新地标”。</p></td>
+		</tr>
+		<tr>
+			<th><h3>皇冠大扶梯</h3></th>
+		</tr>
+		<tr>
+			<td><p>皇冠大扶梯，是重庆的一个路口大扶梯，连接了两路口和重庆站（又名菜园坝火车站），是重庆特色交通之一。单程票价2元。</p><p>该扶梯1993年2月动工，1996年2月18日建成运营，全长112米，宽1.3米，提升高度52.7米，倾斜度为30度，每秒运行0.75米，全程运行2分30秒 ，由上、下梯和备用梯共三台扶梯组成。每台最大载客能力为13000人次/小时，是亚洲第二长的一级提升坡地大扶梯。</p></td>
+		</tr>
+		<tr>
+			<th><h3>茶山竹海</h3></th>
+		</tr>
+		<tr>
+			<td><p>茶山竹海位于重庆永川城北2公里处，面积117平方公里，年平均气温14摄氏度，景区森林覆盖率达97%，大气环境空气质量达国家I级标准，是理想的天然氧吧，景区3万亩茶园和5万亩天然竹林相互缠绕，茶连竹，竹连茶。茶山竹海景区拥有得天独厚的自然资源，凭借着优越的景观特色备受外界关注。景区内有准四星级宾馆1个，度假性山庄35家，准五星级宾馆1家，能够同时容纳5000多人就餐，拥有床位1500多个，景区停车面积超过了15000余平米，可以供1千余台自驾车的停放。2013年2月被国家旅游等级评定委员会评为国家AAAA级旅游景区。</p></td>
+		</tr>
+		<tr>
+			<th><h3>酉阳桃花源</h3></th>
+		</tr>
+		<tr>
+			<td><p>酉阳地处重庆市东南部，武陵山腹地，是重庆幅员面积最大、少数民族人口最多、森林覆盖率最高、平均海拔最高的区县，是重庆唯一不享受高温补贴的区县，是“火炉”重庆名副其实的“凉都”。</p><p>酉阳桃花源景区距重庆市主城300公里，景区总面积50平方公里，由世外桃源、太古洞、酉州古城、桃花源国家森林公园、桃花源广场、桃花源风情小镇、二酉山世外桃源文化主题公园和梦幻桃源实景剧等八大部分组成，集岩溶地质奇观、秦晋农耕文化、土家民俗文化、自然生态文化、休闲养生文化、运动康体文化于一体。是现代人远离尘世喧嚣，步入秦晋田园、探寻科学奥秘、回归绿色天堂的好去处。</p><p>酉阳桃花源景区先后评为国家5A级旅游景区、国家级森林公园、国家地质公园、国家户外运动基地、中国最具国际影响力旅游品牌、市级文明旅游区、重庆市文明旅游风景区、十大文化休闲旅游品牌景区、2010年度·最负国际盛名景区、央视“最舒适景区排行榜等多项殊荣。</p></td>
+		</tr>
+		<tr>
+			<th><h3>重庆市人民大礼堂</h3></th>
+		</tr>
+		<tr>
+			<td><p>重庆市人民大礼堂，位于重庆市渝中区人民路173号，于1951年6月破土兴建，1954年4月竣工，是一座仿古民族建筑群，是重庆十大文化符号，是中国传统宫殿建筑风格与西方建筑的大跨度结构巧妙结合的杰作，也是重庆的标志建筑物之一。</p><p>重庆市人民大礼堂由大礼堂和东、南、北楼四大部分组成。占地总面积为6.6万平方米，其中礼堂占地1.85万平方米。礼堂建筑高65米，大厅净空高55米，内径46.33米，圆形大厅四周环绕四层挑楼，可容纳3400余人。</p><p>1987年，英国皇家建筑学会和伦敦大学编写的《世界建筑史》中，首次收录了新中国建国后的43项工程，其中重庆市人民大礼堂位列第二位。2013年5月，被国务院列入“第七批全国重点文物保护单位”。2016年9月，重庆市人民大礼堂入选“首批中国20世纪建筑遗产”名录。</p><p>2020年2月，为致敬奋斗在抗“疫”一线的医务工作者，重庆市人民大礼堂自恢复运营之日起至2020年12月31日，对全国所有医务工作者实行免费参观政策。</p></td>
+		</tr>
+		<tr>
+			<th><h3>重庆科技馆</h3></th>
+		</tr>
+		<tr>
+			<td><p>重庆科技馆，位于长江与嘉陵江交汇处的重庆江北嘴中央商务区（CBD）核心区域，于2006年1月7日奠基，2006年10月动工建设，2009年9月9日建成开馆。该馆占地面积37亩，建筑面积4.83万平方米。</p><p>重庆科技馆分为A区和B区，馆内共设生活科技、防灾科技、交通科技、国防科技、宇航科技和基础科学6个主题展厅，以及儿童科学乐园和工业之光2个专题展厅。展品涵盖材料、机械、交通、军工、航空航天、微电子技术、信息通讯、计算机应用、虚拟模拟技术、生命科学、环境科学、基础科学及中国古代科学技术等多项学科领域，展品数目达400余（套）。</p><p>2010年，国家旅游局批准重庆科技馆为国家AAAA级旅游景区。2017年，重庆科技馆入选第一批“全国中小学生研学实践教育基地”名单。</p></td>
+		</tr>
+		<tr>
+			<th><h3>长江三峡</h3></th>
+		</tr>
+		<tr>
+			<td><p>长江三峡是瞿塘峡、巫峡和西陵峡三段峡谷的总称，位于中国重庆市和湖北省境内的长江干流上，西起重庆市奉节县的白帝城，东至湖北省宜昌市的南津关，全长193公里。</p><p>瞿塘峡位于重庆奉节境内，巫峡位于重庆巫山和湖北恩施州的巴东两县境内，西陵峡在湖北宜昌市秭归县境内。长江三峡在湖北宜昌境内建成世界上最大的水利枢纽工程——长江三峡水利枢纽工程。“长江三峡——夔门”是第五套人民币10元纸币背面的风景图案。</p></td>
+		</tr>
+		<tr>
+			<th><h3>长江索道</h3></th>
+		</tr>
+		<tr>
+			<td><p>长江索道（外文名：Yangtze River Cableway），位于中国重庆，是重庆第二条跨江索道，市级文物保护单位、4A级旅游景区。</p><p>长江索道是中国自行设计制造的大型跨江客运索道，全长1166米，连通重庆的渝中区和南岸区，被誉为“万里长江第一条空中走廊”和“山城空中公共汽车”。</p></td>
+		</tr>
+		<tr>
+			<th><h3>阿依河</h3></th>
+		</tr>
+		<tr>
+			<td><p>阿依河（长溪河）位于重庆市彭水苗族土家族自治县，国家5A级景区、被评为2008年游客最喜爱的重庆“十大景区”和“十条旅游线路”之一、重庆十大人气景区，为“巴渝新十二景”之首。因苗家人把善良、美丽、聪慧的女子称为“娇阿依”，因此得名。</p><p>阿依河发源于贵州省务川县分水乡，向东北蜿蜒而入重庆市彭水县境，经长旗坝、舟子沱、三江口，最后由万足乡长溪滩处注入乌江，融山、水、林、泉、峡于一体，集雄、奇、险、秀、幽于一身。景区分为峡谷观光区、步游观光区、竹筏观光区、接待中心民族风情休闲度假区、牛角寨民族风情休闲度假区等。对外开放的游览项目有8大项目：峡谷听音、竹筏放歌、碧潭戏水、浪遏飞舟、情定苗寨、青龙天梯、青龙洞和青龙谷等，是休闲观光、民俗体验、户外攀岩及水上运动的首选之地。</p></td>
+		</tr>
+		<tr>
+			<th><h3>龙兴古镇</h3></th>
+		</tr>
+		<tr>
+			<td><p>龙兴镇位于重庆市渝北区东南部，距重庆市中心区36公里，是重庆市历史文化名镇、重庆市经济百强镇。龙兴镇历史悠久，据江北县志记载，元末明初已有小集市，清初商品经济发达。民国初改为龙兴场，2003年6月和并天堡寨镇6个村，既现在的龙兴镇。 古镇保留了许多传统的民俗活动，文化遗产丰富，镇区空气清新，风光秀丽，有鲜明巴渝特色的人文精神和民俗历史。</p></td>
+		</tr>
+	</table>
+
+
+
+</div>
+
+<!-- 结束 -->
+<div class="foot"><p>——END——</p></div>
+</body>
+</html>
