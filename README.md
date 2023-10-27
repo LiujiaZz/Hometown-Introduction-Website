@@ -7,25 +7,34 @@
 
 使用说明：将HTML、pc和video文件夹的文件下载至本地电脑，然后找到index.html文件，右键点击使用visual studio code软件打开，即可查看源代码。
 
-示例：
-打开首页时在顶部会显示导航栏，目前分为八个页面。在导航栏下是一个轮播图和一些文字介绍。
- 
-打开登录页面会请求登录自己的用户名和密码，如果没有账号可以点击“register”进行注册账号
- 
-点击“经济”按钮，将进入经济页面，会在主页面的基础上打开一个新页面。
- 
-“景点”页面主要是介绍重庆的景色，在页面顶部是一个画廊，鼠标停留会放大或倾斜。
- 
-“美食”界面是描述重庆的传统美食，顶部也是一个动画，实现鼠标停留出现放大图片的效果，并且前一张图片切换至下一张图片时会出现停顿动画。
- 
-“学校”页面同样也是做了一些动画在顶部，使得整体效果看的更加流畅。
- 
-“人物”页面介绍了重庆比较出圈的人物
- 
-“文化”页面介绍了重庆的地道文化。
- 
-“历史”界面介绍了重庆的某些历史。
+网页图预览
+
+
+![image](https://github.com/LiujiaZz/Hometown-Introduction-Website/assets/127607386/078790f8-51ff-4b90-9705-e161a807cf82)
+
+
+![image](https://github.com/LiujiaZz/Hometown-Introduction-Website/assets/127607386/a416f3b1-c3e3-40ce-9e9a-13898379cb59)
+
+
+![image](https://github.com/LiujiaZz/Hometown-Introduction-Website/assets/127607386/3f94b14f-f613-4106-bffe-9ea3930880ae)
+
+![image](https://github.com/LiujiaZz/Hometown-Introduction-Website/assets/127607386/76e7d446-1c12-4b21-92a1-f7a6a81102d8)
+
+
+![image](https://github.com/LiujiaZz/Hometown-Introduction-Website/assets/127607386/bd4f9a52-d06e-4728-9ca2-0cfff3222cb7)
+
+![image](https://github.com/LiujiaZz/Hometown-Introduction-Website/assets/127607386/826a479f-b976-4bdf-a054-e6808e06e0e4)
+
+
+![image](https://github.com/LiujiaZz/Hometown-Introduction-Website/assets/127607386/5ef44202-3962-4073-a2c1-31de928e5e37)
+
+
+![image](https://github.com/LiujiaZz/Hometown-Introduction-Website/assets/127607386/e187b352-cbd6-4782-8283-c8461ae1e7c6)
+
+
+![image](https://github.com/LiujiaZz/Hometown-Introduction-Website/assets/127607386/503dabcf-dc73-4810-850c-2ee89fe3e36f)
+
  
 常见问题：
-以为在做这个项目的时候对于响应式布局还不是很熟练，所以这个网页不适合响应式布局。在谷歌和edge浏览器打开的显示样式可能存在差异。
+此项目只适用于初学HTML的练手项目，还存在很多问题需要慢慢修改，没有对这个网页做响应式布局，只是对一些HTML标签进行了使用，加了些许css动画。
 
