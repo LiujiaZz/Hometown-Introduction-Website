@@ -1,8 +1,12 @@
 # Hometown-Introduction-Website
 这是一个自制的介绍重庆的网站，仅供参考
+
 概述：这是一个描述家乡的网站，主要用于欣赏。
+
 安装说明：需要安装visual studio code软件用于编写代码。
+
 使用说明：将HTML、pc和video文件夹的文件下载至本地电脑，然后找到index.html文件，右键点击使用visual studio code软件打开，即可查看源代码。
+
 示例：
 打开首页时在顶部会显示导航栏，目前分为八个页面。在导航栏下是一个轮播图和一些文字介绍。
  
